@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<title>Лекции</title>
+		<link href="../../css/style.css" rel="stylesheet" type="text/css">
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/main.js"></script>
+    </head>
+
+    <body>
+		<div id="content">
+			<!-- Начало содержимого страницы -->
+
+
+<h1>Лабораторная работа:</h1>
+
+<h1>«Создание интерактивного электронного технического руководства <span lang=EN-US>Autodesk</span><span
+lang=EN-US> </span><span lang=EN-US>Vault</span>» </h1>
+
+<h1>Введение </h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.85pt;
+margin-left:.25pt;line-height:normal'><b><span style='font-size:13.5pt;
+font-family:"Verdana","sans-serif";color:#333366'> </span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Компания Autodesk шагнула чуть дальше,
+чем выпуск приложения для существующих САПР, упрощающих разработку инструкций и
+руководств. Autodesk Inventor Publisher – это абсолютно самостоятельный продукт
+для создания интерактивной документации на основе проектов, выполненных в
+привычных проектировщикам САПР. Взяв за основу 3d модель, пользователь начинает
+оформлять различные представления изделия, добавляя размеры, описания
+элементов, спецификации, выносные виды. Инструменты, доступные в Autodesk
+Inventor Publisher, позволяют полностью оформить документацию в любом виде – от
+чертежей с пояснениями до видеороликов со всплывающими комментариями.  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.1pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:9.0pt;text-align:center;
+line-height:normal'><span style='position:relative;top:-1.0pt'><img width=305
+height=177 id="Picture 3231" src="lab4.files/image001.gif"></span> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:17.7pt;
+margin-left:.25pt;line-height:normal'><b><span style='font-size:13.5pt;
+font-family:"Verdana","sans-serif";color:#333366'> </span></b></p>
+
+<h1 style='margin-bottom:16.25pt'>Цель работы<span style='font-family:"Times New Roman","serif";
+color:black;font-weight:normal'> </span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.5pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Verdana","sans-serif";color:#333366'> </span><span style='font-size:10.0pt;
+font-family:"Times New Roman","serif"'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:.75pt;text-indent:-.5pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>На основе бумажного руководства по эксплуатации и 3д модели
+изделия, созданной в Autodsk Inventor, необходимо создать электронную версию
+руководства по эксплуатации в Autodesk Inventor Publisher, которая включает в
+себя следующие пункты </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.3pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Verdana","sans-serif";color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:35.55pt;text-indent:-18.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626;border:none windowtext 1.0pt;padding:0cm'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>Создание нового проекта </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:35.55pt;text-indent:-18.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626;border:none windowtext 1.0pt;padding:0cm'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>Сборка/Разборка изделия, расположение элементов </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:35.55pt;text-indent:-18.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626;border:none windowtext 1.0pt;padding:0cm'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>Простановка размеров </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:35.55pt;text-indent:-18.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626;border:none windowtext 1.0pt;padding:0cm'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>Добавление комментариев и областей детального просмотра </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:35.55pt;text-indent:-18.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626;border:none windowtext 1.0pt;padding:0cm'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>Создание спецификации на основе спецификации из Inventor </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+2.2pt;margin-left:35.55pt;text-indent:-18.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626;border:none windowtext 1.0pt;padding:0cm'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Verdana","sans-serif";
+color:#262626'>Выпуск документации </span></p>
+
+<p class=MsoNormal style='margin-left:36.3pt;line-height:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman","serif";color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.8pt;
+margin-left:36.3pt;line-height:normal'><span style='font-size:10.0pt;
+font-family:"Times New Roman","serif";color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:3.3pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;font-family:
+"Verdana","sans-serif";color:#262626'> </span><span style='font-size:10.0pt;
+font-family:"Times New Roman","serif";color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'><b><span
+style='font-size:13.5pt;font-family:"Verdana","sans-serif";color:#333366'> </span></b></p>
+
+<h1>Порядок выполнения работы </h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.95pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Для создания нового проекта щёлкните по
+главной иконке и выберите пункт New </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.4pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.6pt;
+margin-left:.25pt;line-height:normal'><span style='position:relative;
+top:-1.0pt'><img width=237 height=307 id="Picture 3270"
+src="lab4.files/image002.gif"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>После этого откройте файл вашего проекта
+в формате Inventor (*.ipt) </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.3pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:34.25pt;margin-bottom:
+7.85pt;margin-left:0cm;line-height:normal'><span style='position:relative;
+top:-.5pt'><img width=578 height=277 id="Picture 3271"
+src="lab4.files/image003.gif"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.2pt;margin-bottom:7.6pt;
+margin-left:0cm;line-height:normal'><img width=623 height=332 id="Picture 3311"
+src="lab4.files/image004.gif"><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:11.2pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.95pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Окно Autodesk Inventor Publisher состоит
+из нескольких частей </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:15.5pt;
+margin-left:36.3pt;text-indent:-18.0pt;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;color:#262626;border:none windowtext 1.0pt;
+padding:0cm'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:101%;color:#262626'>Tabs
+&amp; Command Panels – лента с командами, сгруппированными по вкладкам </span></p>
+
+<p class=MsoNormal style='margin-bottom:12.6pt;line-height:normal'><img
+width=624 height=93 id="Picture 231" src="lab4.files/image005.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:11.15pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:36.3pt;text-indent:-18.0pt;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;color:#262626;border:none windowtext 1.0pt;
+padding:0cm'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:101%;color:#262626'>View
+Cube и Navigation Bar – основные инструменты для навигации </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.05pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'><img width=80
+height=276 id="Picture 230" src="lab4.files/image006.jpg"><span
+style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.9pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:36.3pt;text-indent:-18.0pt;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;color:#262626;border:none windowtext 1.0pt;
+padding:0cm'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:101%;color:#262626'>Graphic
+Screen – рабочая область </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.2pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:27.3pt;margin-bottom:
+7.55pt;margin-left:0cm;line-height:normal'><img width=587 height=315
+id="Picture 261" src="lab4.files/image007.jpg"><span style='font-size:12.0pt;
+color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:36.3pt;text-indent:-18.0pt;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;color:#262626;border:none windowtext 1.0pt;
+padding:0cm'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:101%;color:#262626'>Canvas
+Browser – браузер со списком компонентов </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.1pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:.25pt;line-height:normal'><img width=191 height=439
+id="Picture 3344" src="lab4.files/image008.gif"><span style='font-size:12.0pt;
+color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'><span
+style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:36.3pt;text-indent:-18.0pt;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;color:#262626;border:none windowtext 1.0pt;
+padding:0cm'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:101%;color:#262626'>Storyboard
+Editor  - редактор кадров </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.4pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-bottom:7.8pt;line-height:normal'><img
+width=373 height=198 id="Picture 297" src="lab4.files/image009.jpg"><span
+style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>При нажатии правой кнопкой мыши на любом
+элементе геометрии появляется его контекстное меню </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.1pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:28.75pt;margin-bottom:
+15.3pt;margin-left:.25pt;line-height:145%'><span style='position:relative;
+top:-.5pt'><img width=586 height=316 id="Picture 299"
+src="lab4.files/image010.jpg"></span><span style='font-size:12.0pt;line-height:
+145%;color:#262626'>  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Расположение элементов </span></p>
+
+<p class=MsoNormal style='margin-right:.75pt;text-indent:-.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;color:#262626'>Для
+создания схем сборки или наглядного представления изделий можно последовательно
+перемещать элементы в ручном режиме или разобрать всю сборку автоматически по
+выбранным осям.  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Для ручного перемещения выберите
+элементы и нажмите инструмент Move во вкладке Home на ленте команд </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.75pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal align=right style='margin-right:36.65pt;text-align:right;
+line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:36.45pt;margin-bottom:
+13.05pt;margin-left:0cm;line-height:normal'><span style='position:relative;
+top:215.5pt'><img width=566 height=320 id="Picture 340"
+src="lab4.files/image011.jpg"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Траекторию движения также можно
+отразить, нажав Trial Visibility </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.8pt;line-height:normal'><span
+style='position:relative;top:-1.0pt'><img width=462 height=343 id="Picture 339"
+src="lab4.files/image012.jpg"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Для создания сложной траектории после
+простых прямолинейных перемещений нажмите Add Trial Elbow. </span></p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'><span
+style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:10.7pt;line-height:normal'><img
+width=498 height=881 src="lab4.files/image013.gif"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:14.0pt;margin-bottom:
+0cm;margin-left:.25pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;line-height:111%'><span style='font-size:12.0pt;line-height:
+111%;color:#262626'>Для автоматического создания иерархической структуры
+элементов, демонстрирующих последовательность сборки, нажмите на сборку в
+браузере правой клавишей мыши и  в выпавшем меню выберите AutoExplode. </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.4pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-bottom:7.6pt;line-height:normal'><span
+style='position:relative;top:-.5pt'><img width=378 height=355 id="Picture 3537"
+src="lab4.files/image014.gif"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:468.4pt;margin-bottom:
+10.55pt;margin-left:.25pt;line-height:166%'><span style='font-size:12.0pt;
+line-height:166%;color:#262626'>  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Можно регулировать расстояние между
+соседними компонентами в процентах и количестве шагов при разборке </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.6pt;
+margin-left:.25pt;line-height:normal'><span style='position:relative;
+top:-.5pt'><img width=251 height=183 id="Picture 3538"
+src="lab4.files/image015.gif"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:11.2pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:15.55pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'> Простановка размеров </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.95pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>В AIP предусмотрены инструменты для
+нанесения линейных, угловых и диаметральных размеров.  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Линейные – нажмите во вкладке Home </span></p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-bottom:7.35pt;line-height:normal'><span
+style='position:relative;top:-.5pt'><img width=321 height=458 id="Picture 433"
+src="lab4.files/image016.jpg"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Для редактирования текста, его размера и
+шрифта, единиц измерения, наклона, используйте панель редактирования </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.3pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:51.6pt;margin-bottom:
+7.8pt;margin-left:0cm;line-height:normal'><img width=552 height=171
+id="Picture 3572" src="lab4.files/image017.gif"><span style='font-size:12.0pt;
+color:#262626'>  </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Чтобы создать угловой или диаметральный
+размер, выберите Angular или Radius соответственно. </span></p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:.25pt;line-height:normal'><span style='position:relative;
+top:-.5pt'><img width=205 height=230 id="Picture 3605"
+src="lab4.files/image018.gif"></span><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:15.55pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Создание комментариев </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.95pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:10.85pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Для создания текстовой выноски нажмите
+Callout во вкладке Home и укажите элемент, для которого необходимо создать
+комментарий. </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:11.2pt;
+margin-left:.25pt;line-height:normal'><img width=628 height=529
+src="lab4.files/image019.gif"></p>
+
+<p class=MsoNormal style='margin-right:.75pt;text-indent:-.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;color:#262626'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:.75pt;text-indent:-.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;color:#262626'>На ленте
+команд появится вкладка Annotate для редактирования. </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.4pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-bottom:7.8pt;line-height:normal'><img
+width=628 height=111 id="Picture 3657" src="lab4.files/image020.gif"><span
+style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'><span style='font-size:12.0pt;color:#262626'> </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.75pt;margin-bottom:3.25pt;
+margin-left:0cm;text-indent:-.5pt;line-height:101%'><span style='font-size:
+12.0pt;line-height:101%;color:#262626'>Чтобы установить в произвольном месте
+рабочего пространства комментарий, не </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:15.55pt;
+margin-left:.25pt;line-height:normal'><img width=537 height=366
+src="lab4.files/image021.gif"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Детальный просмотр </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.5pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Для создания
+выносного вида элементов используется инструмент Detail View </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.25pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='line-height:normal'><span style='position:relative;
+top:-1.0pt'><img width=472 height=255 id="Picture 511"
+src="lab4.files/image022.jpg"></span> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Выберите область,
+которую хотите детализировать  </p>
+
+<p class=MsoNormal align=right style='margin-right:68.1pt;text-align:right;
+line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-right:68.1pt;line-height:normal'><span
+style='position:relative;top:347.5pt'><img width=524 height=493 id="Picture 565"
+src="lab4.files/image023.jpg"></span>              </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:15.6pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Спецификации </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+15.5pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Для создания спецификации
+выберите инструмент Parts List. В открывшемся окне можно указать, какие
+элементы будут отображаться в списке, настроить вид таблицы, добавляя столбцы с
+информацией о детали, включить автоматическое создание выносок с нумераций
+деталей, указанных в спецификации. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Секущие плоскости </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Чтобы показать
+модель в разрезе, нужно создать секущую плоскость с помощью инструменты Section
+Front.  </p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:171.6pt;margin-bottom:
+7.85pt;margin-left:0cm;line-height:normal'><img width=396 height=229
+id="Picture 575" src="lab4.files/image024.jpg"> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>В зависимости от
+расположения секущей плоскости выберите </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.15pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='line-height:normal'><img width=310 height=333
+id="Picture 577" src="lab4.files/image025.jpg"> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.4pt;margin-bottom:7.85pt;
+margin-left:0cm;line-height:normal'><span style='position:relative;top:-1.0pt'><img
+width=623 height=325 id="Picture 3812" src="lab4.files/image026.gif"></span> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.5pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Чтобы указать, какая
+часть будет видна после разреза, щелкните левой кнопкой по нужной части. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:5.45pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-bottom:8.55pt;line-height:normal'><img
+width=624 height=299 id="Picture 607" src="lab4.files/image027.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:15.6pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Редактор кадров </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>В редакторе кадров
+можно создавать группы документов, содержащие набор снимков. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+0cm;margin-left:.5pt;margin-bottom:.0001pt;text-indent:-.5pt;line-height:110%'>Для
+создания нового пакеты документов выберите New StoryBoard. При двойном щелчке
+левой кнопкой мыши, откроются кадры, которые содержатся в пакете. </p>
+
+<p class=MsoNormal style='margin-left:178.4pt;line-height:normal'>               <span
+style='position:relative;top:108.0pt'><img width=302 height=158 id="Picture 666"
+src="lab4.files/image028.jpg"></span></p>
+
+<p class=MsoNormal style='margin-right:38.4pt;line-height:normal'><img
+width=227 height=147 id="Picture 667" src="lab4.files/image029.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.4pt;margin-bottom:
+10.7pt;margin-left:178.4pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.5pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Для создания нового
+кадра нужно нажать New Snapshot в панели Home </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.35pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-bottom:7.6pt;line-height:normal'><img
+width=292 height=161 id="Picture 3912" src="lab4.files/image030.gif"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Переключаясь между
+кадрами, можно менять расположение камер, отображение геометрии изделия, выноски,
+размеры и много другое. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Для редактирования
+настроек видеоролика, нужно щёлкнуть правой клавишей мыши  в меню списка
+документов и выбрать пункт Show Timing. В появившихся ячейках с цифрами можно
+выбрать время отображения каждого кадра и длительность перехода между ними. </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.7pt;text-align:center;
+line-height:normal'><img width=399 height=383 src="lab4.files/image031.jpg"
+align=left hspace=12> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.5pt;text-align:center;
+line-height:normal'> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.75pt;text-align:center;
+line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.75pt;text-align:center;
+line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.75pt;text-align:center;
+line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.75pt;text-align:center;
+line-height:normal'> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.7pt;text-align:center;
+line-height:normal'> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.5pt;text-align:center;
+line-height:normal'> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.7pt;text-align:center;
+line-height:normal'> </p>
+
+<p class=MsoNormal align=center style='margin-bottom:10.75pt;text-align:center;
+line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+3.25pt;margin-left:0cm;text-indent:-.5pt;line-height:normal'><span
+style='font-size:16.0pt;color:#2E74B5'>Выпуск документации </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:10.7pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+10.7pt;margin-left:.5pt;text-indent:-.5pt;line-height:110%'>Выбор и настройка
+форматов документации осуществляются посредством инструментов, находящихся в 
+категории Publish вкладки Home. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.4pt;
+margin-left:.25pt;line-height:normal'> </p>
+
+<p class=MsoNormal style='line-height:normal'><span style='position:relative;
+top:-.5pt'><img width=423 height=520 id="Picture 3936"
+src="lab4.files/image032.gif"></span> </p>
+
+</div>
+
+			<!-- Конец содержимого страницы -->
+		</div>
+    </body>
+</html>

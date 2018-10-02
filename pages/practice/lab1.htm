@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<title>Лекции</title>
+		<link href="../../css/style.css" rel="stylesheet" type="text/css">
+		<script src="../../js/jquery-2.0.3.min.js"></script>
+		<script src="../../js/main.js"></script>
+    </head>
+
+    <body>
+		<div id="content">
+			<!-- Начало содержимого страницы -->
+
+
+<align="left" style="MARGIN-TOP: 0px; WORD-SPACING: 0px"><FONT face=Verdana color="#010103" size="6"><b>Лабораторная работа 1:«Передача модели изделия между САПР с помощью обменного файла STEP»</b> </FONT></p>
+<br><h3><align="left"><font face="Verdana" color="#010103"><B>Цель работы:</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">В ходе лабораторной работы Вы научитесь передавать модель изделия между различными САПР, в качестве которых будете использовать Autodesk Inventor 2018 Professional и КОМПАС-3D V17. В частности, Вы научитесь:</font></p>
+<p><font face="Verdana" color="#010103">• экспортировать в обменный файл и импортировать из обменного файла данные об изделии;</font></p>
+<p><font face="Verdana" color="#010103">• просматривать содержимое обменных файлов с помощью специальных программ просмотра.</font></p>
+<br><h3><align="left"><font face="Verdana" color="#010103"><B>Cценарий работы:</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">При разработке модели изделия с применением различных САПР первоначально происхо­дит создание модели в одной из них.
+Далее эта модель передается в другую систему, например, для деталировки. При применении для этого стандарта STEP необходимо предварительно сформировать обменный файл STEP, содержащий модель изделия.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">В этот момент STEP-модель изделия может быть визуализирована при помощи пакета STP Viewer, а содержание обменного файла может быть отображено при помощи пакета STEP File Browser.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">Для того чтобы модель изделия была загружена в другую САПР, необходимо перевести ее из обменного файла STEP в формат требуемой системы, после чего возможен просмотр и изменение модели, правда, с потерей параметризации.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">После этого модель изделия может быть возвращена в исходную САПР путем последовательного перевода измененной модели изделия в STEP и преобразования STEP-модели в формат исходной САПР.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/image001.png">&nbsp;&nbsp;&nbsp;</p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.1. Схема использования STEP файла.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<h3><align="left"><font face="Verdana" color="#010103"><B>1. Работа с САПР Inventor</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">1. Запустить Autodesk Inventor любым известным Вам способом.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">2. Для создания новой модели выбрать Файл -> Создать. В открывшемся диалоговом окне выбрать шаблон «Обычный.ipt».</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r1.jpg" width="500" height="400">&nbsp;&nbsp;&nbsp;</p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.2. Создание новой модели.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">3. Программа автоматически переведет новый документ в режим создания эскиза. На панели «Рисование» вкладки «Эскиз» выберите инструмент «Прямоугольник».</font></p>
+<p align="justify"><font face="Verdana" color="#010103">4. Создать прямоугольник размером 50х25.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r2.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.3. Создание прямоугольника в эскизе.</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">5. С помощью инструмента Сопряжение на панели Рисование создать сопряжение 5 мм на углах.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r3.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.4. Создание фаски.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">6. Нажать Esc, чтобы убрать инструмент. В любой точке экрана нажать ПКМ и выбрать «Завершить 2D Эскиз».</font></p>
+<p align="justify"><font face="Verdana" color="#010103">7. На вкладке «Модель» выбрать инструмент «Выдавливание». Задать высоту выдавливания 10 см.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r4.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.5. Выдавливание эскиза.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">9. Для создания отверстия в созданном теле необходимо:</font></p>
+<p><font face="Verdana" color="#010103">• Выбрать инструмент «Отверстие»:</font></p>
+<p><font face="Verdana" color="#010103">• Выбрать плоскость и точку, где будет находится отверстие, задать величину диаметра отверстия;</font></p>
+<p><font face="Verdana" color="#010103">• Нажать ОК.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r5.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.6. Применение отверстия.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">10. На панели «Массив» выбрать «Прямоугольный массив». В качеств оригинального элемента указать созданное отверстие. Задать параметры как на рисунке ниже и нажать ОК.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r6.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.7. Создание прямоугольного массива отверстий.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<h3><align="left"><font face="Verdana" color="#010103"><B>2. Экспорт модели в обменный файл STEP</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">1. Файл -> Экспорт -> формат CAD.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r7.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.8. Экспорт в CAD format.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">2. В открывшемся окне «Сохранить копию как» указать тип данных STEP и имя файла Part1.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r8.jpg" width="500" height="400"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.9. Сохранение проекта в формате step.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">3. Нажать «Параметры» и изменить их на следующие:</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r9.jpg" width="350" height="500"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.10. Параметры сохранения.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">4.  Нажмите на кнопку «Сохранить».</font></p>
+<br><h3><align="left"><font face="Verdana" color="#010103"><B>3. Импорт модели из обменного файла STEP</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">1. Выберите пункт меню Файл -> Открыть. В открывшемся диалоговом окне указать деталь Part1.stp</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r10.jpg" width="350" height="500"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.11. Параметры импорта.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">2. Нажать «Открыть». Изучить полученную модель.</font></p>
+<br><h3><align="left"><font face="Verdana" color="#010103"><B>4. Работа с САПР Компас 3D</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">1. Запустить САПР Компас 3D.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">2. Вызвать команду Файл -> Открыть.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">3. В списке Тип файла появившегося диалога выбрать нужный формат и указать имя файла.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r11.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.12. Выбор типа открываемого файла.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p align="justify"><font face="Verdana" color="#010103">4. Нажать кнопку Открыть. В большинстве случаев после этого на экране появляется диалог, в котором можно настроить некоторые параметры импорта.</font></p>
+<p align="justify"><font face="Verdana" color="#010103">Результатом импорта детали является один файл — деталь КОМПАС-3D, которая отображается в текущем окне. Дерево импортированной детали содержит только «операции без истории».</font></p>
+<p align="justify"><font face="Verdana" color="#010103">5. Для создания отверстия в созданном теле необходимо:</font></p>
+<p><font face="Verdana" color="#010103">• Выделить верхнюю грань.</font></p>
+<p><font face="Verdana" color="#010103">• Выбрать из меню слева инструмент «Отверстие».</font></p>
+<p><font face="Verdana" color="#010103">• Выбор отверстия – Отверстие 01.</font></p>
+<p><font face="Verdana" color="#010103">• Указать точку привязки.</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r12.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.13. Расположение отверстия на плоскости.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<p><font face="Verdana" color="#010103">• Способ построения «Через все».</font></p>
+<br><p  align="center" class="стиль7"><IMG src="lab1.files/r13.jpg" width="850" height="450"></p>
+<h4><p align="center" class="стиль7"><FONT color=#010103><i>Рис. 1.14. Итоговый вид детали.&nbsp;&nbsp;&nbsp;</h4></i></FONT></p><br>
+<h3><align="left"><font face="Verdana" color="#010103"><B>5. Итог</B></h3></font></p><br>
+<p align="justify"><font face="Verdana" color="#010103">В ходе лабораторной работы был проведен импорт и экспорт модели изделия между различными САПР, в качестве которых использовались Autodesk Inventor 2018 Professional и КОМПАС-3D V17.</font></p>
+<br><p align="justify"><font face="Verdana" color="#010103">Список источников:</font></p>
+<p><font face="Verdana" color="#010103">1. Л.И. Райкин, М.Н. Субботина Лабораторный практикум по курсу «Информационная поддержка жизненного цикла изделий». Нижний Новгород, Кафедра графических информационных систем, 2017г.</font></p>
+
+</div>
+
+
+			<!-- Конец содержимого страницы -->
+		</div>
+    </body>
+</html>
